@@ -7,7 +7,7 @@ podTemplate(label: 'java', containers: [containerTemplate(name: 'jdk8', image: '
        ./gradlew cucumber;'''
        cucumber fileIncludePattern: '**/cucumber.json',
                 sortingMethod: 'ALPHABETICAL'
-       
+
       }
     }
   }
