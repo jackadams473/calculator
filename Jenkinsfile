@@ -4,10 +4,10 @@ podTemplate(label: 'java', containers: [containerTemplate(name: 'jdk8', image: '
     container("jdk8") {
       stage('Test') {
         sh '''chmod +x gradlew;
-       ./gradlew cucumber;
+       ./gradlew cucumber;'''
        cucumber fileIncludePattern: '**/cucumber.json',
-        sortingMethod: 'ALPHABETICAL'
-        '''
+                sortingMethod: 'ALPHABETICAL'
+       
       }
     }
   }
